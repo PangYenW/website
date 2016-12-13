@@ -25,23 +25,25 @@
     </p1>
    <p> &nbsp; </p>
    <p><b style="font-size: 60;"> About me: </b></p>
-   <p style = "color: rgb(33,97,140); 
+   <p style = "color: rgb(255,255,255); 
    font-size:30;">Birthday: 
    <p style="padding-left:1em"> July 5,1997</p></p>
-   <p style = "color: rgb(33,97,140);
+   <p style = "color: rgb(255,255,255);
   
    font-size:30;">College: 
    <p style="padding-left:1em"> University At Buffalo</p>
    <p style = "color: rgb(33,97,140); font-size:30;">Courses taking: 
-   <p style="padding-left:1em"> CSE115</p>
+   <p style="padding-left:1em"style="color: rgb(255,255,255); font-size:30;"> CSE115</p>
    <p style="padding-left:1em"> CSE199</p>
-   <p style="padding-left:1em"> ARC121</p>
-   <p style="padding-left:1em"> MTH241</p></p>
+
+ 
+</p>
+   </p>
    </div>
 <style>
 
 body {
-    background-color: lightblue;
+    background-color: gray;
 }
 
 h1 {
@@ -168,7 +170,29 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
+
+
 </script>
+
+</body>
+<body>
+
+<h1> My University and Church at:</h1>
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(43.001, -78.790),
+        zoom: 14,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 </body>
 
